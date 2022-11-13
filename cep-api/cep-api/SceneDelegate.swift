@@ -16,6 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
         self.window = UIWindow(frame: UIScreen.main.bounds)
+        // essa linha diz qual vai ser a tela inicial do build
         self.window?.rootViewController = ViewController()
         self.window?.makeKeyAndVisible()
         self.window?.windowScene = windowScene
